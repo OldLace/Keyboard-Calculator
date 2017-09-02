@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul's Calculator</title>
+<!-- 	Browser Tab Icon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- 	   Link CSS -->      
+<link rel="stylesheet" type="text/css" href="calculator.css">  
+
+</head>
+<body>
+
+<!-- Start of keyboard container --- GO! -->
+<div id="keyboard_container">
+            <form name="calc">
+                <input id="display" type="text" name="output" size="82" placeholder="0" />
+                <br/>
+
+
+
+<input type="button" class="usable" value=" 1 " onclick="calc.output.value +='1'"/>
+<input type="button" class="usable" value=" 2 " onclick="calc.output.value +='2'"/>
+<input type="button" class="usable" value=" 3 " onclick="calc.output.value +='3'"/>
+<input type="button" class="usable" value=" 4 " onclick="calc.output.value +='4'"/>
+<input type="button" class="usable" value=" 5 " onclick="calc.output.value +='5'"/>
+<input type="button" class="usable" value=" 6 " onclick="calc.output.value +='6'"/>
+<input type="button" class="usable" value=" 7 " onclick="calc.output.value +='7'"/>
+<input type="button" class="usable" value=" 8 " onclick="calc.output.value +='8'"/>
+<input type="button" class="usable" value=" 9 " onclick="calc.output.value +='9'"/>
+<input type="button" class="usable" value=" 0 " onclick="calc.output.value +='0'"/>
+<input type="button" class="usable" value=" - " onclick="calc.output.value +='-'"/>
+<input type="button" class="usable" value=" = " onclick="calc.output.value=eval(calc.output.value)"/>
+
+<input type="button" class="usable" value=" delete " onClick="window.location.reload()"/>
+
+</br>
+
+<input type="button" class="nouse" value=" TAB " onclick="entries('tab')"/>
+<input type="button" class="nouse" value=" Q " onclick="entries('q')"/>
+<input type="button" class="nouse" value=" W " onclick="entries('w')"/>
+<input type="button" class="nouse" value=" E " onclick="entries('e')"/>
+<input type="button" class="nouse" value=" R " onclick="entries('r')"/>
+<input type="button" class="nouse" value=" T " onclick="entries('t')"/>
+<input type="button" class="nouse" value=" Y " onclick="entries('y')"/>
+<input type="button" class="nouse" value=" U " onclick="entries('u')"/>
+<input type="button" class="nouse" value=" I " onclick="entries('i')"/>
+<input type="button" class="nouse" value=" O " onclick="entries('o')"/>
+<input type="button" class="nouse" value=" P " onclick="entries('[')"/>
+<input type="button" class="nouse" value=" [ " onclick="entries('p')"/>
+<input type="button" class="nouse" value=" ] " onclick="entries(']')"/> 
+<input type="button" class="nouse" value=" \ " onclick="entries(' ')"/>
+</br>
+
+<input type="button" class="nouse" value=" CAPS LOCK " onclick="entries('o')"/>
+<input type="button" class="usable" value="A" onclick="calc.input.value=average("calc.input.value")/> 
+
+<input type="button" class="nouse" value=" S " onclick="entries('S')"/>
+<input type="button" class="nouse" value=" D " onclick="entries('D')"/>
+<input type="button" class="nouse" value=" F " onclick="entries('F')"/>
+<input type="button" class="nouse" value=" G " onclick="entries('G')"/>
+<input type="button" class="nouse" value=" H " onclick="entries('H')"/>
+<input type="button" class="nouse" value=" J " onclick="entries('J')"/>
+<input type="button" class="nouse" value=" K " onclick="entries('K')"/>
+<input type="button" class="nouse" value=" L " onclick="entries('L')"/>
+<input type="button" class="nouse" value=" ; " onclick="entries('A')"/>
+<input type="button" class="usable" value="*" onclick="calc.output.value +='*'"/>
+
+
+</br>
+
+<input type="button" class="nouse" id=”leftshift” value=" left shift " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" Z " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" X " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" C " onclick="entries(' ')"/>
+<input type="button" class="nouse" value=" V " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" B " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" N " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" M " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" , " onclick="entries('A')"/>
+<input type="button" class="nouse" value=" . " onclick="entries('A')"/>
+<input type="button" class="usable" value="/" onclick="calc.output.value +='/'"/>
+<input type="button" class="usable" value="+" onclick="calc.output.value +='+'"/>
+
+</form>
+</div>
+<!-- End of Keyboard container craziness  -->
+
+
+
+<script>
+
+
+// Take the number inputs into an array
+// they're strings
+// so... split(+)
+// eval 'em and divide by the length of the array
+
+
+// function average(input) {
+
+	// var numberArray = input.split("+");
+	// var i = 0;
+	// var sum = 0;
+
+	// for(var i = 0; i < numberArray.length; i++) {
+
+	// 	var num = eval(numberArray[i]);
+	// 	sum += num;
+	// 	console.log(sum);
+	// }
+
+	// var avg = sum/numberArray.length;
+	// return avg;
+// }
+
+
+</script>
+
+</body>
+</html>
