@@ -53,7 +53,7 @@
 </br>
 
 <input type="button" class="nouse" value=" CAPS LOCK " onclick="entries('o')"/>
-<input type="button" class="usable" value="A" onclick="calc.input.value=average("calc.input.value")/> 
+<input type="button" class="usable" value="A" onclick="calc.output.value = average(calc.output.value)"/> 
 
 <input type="button" class="nouse" value=" S " onclick="entries('S')"/>
 <input type="button" class="nouse" value=" D " onclick="entries('D')"/>
@@ -90,7 +90,19 @@
 
 <script>
 
+function average (input){
+            var array = input.split("+");
+            var sum = 0;
 
+            for(i=0; i<array.length; i++){
+                var integer = eval(array[i]);
+                sum += integer;
+            }
+
+            var avg = sum/array.length;
+            console.log(sum);
+            return avg;
+        }
 // Take the number inputs into an array
 // they're strings
 // so... split(+)
